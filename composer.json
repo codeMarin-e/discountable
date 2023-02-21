@@ -1,0 +1,26 @@
+{
+    "name": "marinar/discountable",
+    "description": "Discountable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\Discountable\\": "src/"
+        }
+    },
+    "require": {
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": true,
+            "addon_to": false
+        }
+    }
+}
