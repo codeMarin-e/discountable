@@ -12,7 +12,7 @@
         public static function bootDiscountable() {
             static::deleting( static::class.'@onDeleting_discounts' );
             if (method_exists(static::class, 'bootSoftDeletes') || static::hasMacro('bootSoftDeletes')) {
-                Product::registerModelEvent('forceDeleted', static::class . '@onForceDeleted_discounts');
+                static::registerModelEvent('forceDeleted', static::class . '@onForceDeleted_discounts');
             }
         }
 
