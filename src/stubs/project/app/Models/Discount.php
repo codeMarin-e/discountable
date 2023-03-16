@@ -2,12 +2,13 @@
 
 namespace App\Models;
 
+use App\Traits\AddVariable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use App\Traits\MacroableModel;
 use App\Traits\Orderable;
-use App\Traits\Discountable;
+use App\Traits\AddVariable;
 
 class Discount extends Model
 {
@@ -19,7 +20,7 @@ class Discount extends Model
     ];
 
     use MacroableModel;
-    use Discountable;
+    use AddVariable;
     use SoftDeletes;
 
     //ORDERABLE
