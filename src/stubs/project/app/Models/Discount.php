@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use App\Traits\MacroableModel;
 use App\Traits\Orderable;
-use App\Traits\AddVariable;
 
 class Discount extends Model
 {
