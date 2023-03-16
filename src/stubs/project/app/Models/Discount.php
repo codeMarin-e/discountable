@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Arr;
 use App\Traits\MacroableModel;
 use App\Traits\Orderable;
+use App\Traits\Discountable;
 
 class Discount extends Model
 {
@@ -18,6 +19,7 @@ class Discount extends Model
     ];
 
     use MacroableModel;
+    use Discountable;
     use SoftDeletes;
 
     //ORDERABLE
